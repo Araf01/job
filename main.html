@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="main.css">
+</head>
+<body>
+    <div id="container">
+        <div id="header">
+            <div id="monthDisplay"></div>
+            <div>
+                <button id="backButton">Tillbaka</button>
+                <button id="nextButton">Nästa</button>
+                <button id="saveButton">Spara som bild</button>
+            </div>
+        </div>
+
+        <div>Markera alla dagspass<input type="checkbox" name="" id="allDay" onclick="dayy()"></div>
+        <div>Markera alla kvälls/nattpass<input type="checkbox" name="" id="allnight" onclick="night()"></div>
+
+       <div id="calender"></div>
+
+    </div>
+
+
+    <script src="main.js"></script>
+    <script src="html2canvas.js"></script>
+    <script>
+document.getElementById("saveButton").onclick = function () {
+const screenshotTarget = document.getElementById('calender');
+
+html2canvas(screenshotTarget).then((canvas) => {
+const base64image = canvas.toDataURL("image/png");
+var anchor = document.createElement('a');
+anchor.setAttribute("href", base64image);
+anchor.setAttribute("download", "my-image.png");
+anchor.click();
+anchor.remove();
+
+});
+
+};
+
+    </script>
+</body>
+</html>
