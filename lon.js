@@ -33,6 +33,8 @@ function berakna() {
       const obd_ = Number(document.getElementById('obd').value); 
       const vecka = Number(document.getElementById('vecka').value); 
       const monad = Number(document.getElementById('monad').value); 
+      var skatt = (document.getElementById('forre')); 
+
       
 
 
@@ -42,8 +44,8 @@ function berakna() {
 
       var sum = (arbettid * timlon) + obbs + over;
 
-
-      console.log(sum);
+      skatt.innerText = sum + " SEK";
+     
       
 
 
