@@ -1,0 +1,55 @@
+body {
+    display: flex;
+    margin-top: 50px;
+    background: url(https://images.unsplash.com/photo-1534796636912-3b95b3ab5986?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxleHBsb3JlLWZlZWR8MXx8fGVufDB8fHx8&w=1000&q=80);
+    
+    
+  }
+
+  #con {
+   
+    width: 100%;
+ height: 600px;
+ 
+ 
+
+    
+    
+  }
+
+  #maincon{
+    
+    box-shadow: 5px 5px 5px 5px rgba(0, 0, 0, 0.6);
+height: 50%;
+    background: url(https://media.istockphoto.com/id/1035676256/sv/foto/bakgrund-av-galaxen-och-stj%C3%A4rnor.jpg?s=612x612&w=0&k=20&c=gEOU49ZxfN-KmlmU_S88CZxe9YE2mK7ExaQliV2LURA=);
+    border-radius: 5%;
+    
+    
+
+  }
+
+  #loncon{
+    
+    box-shadow: 5px 5px 5px 5px rgba(0, 0, 0, 0.6);
+    margin-top: 5%;
+    border-radius: 5%;
+   align-self: center;
+    height: 50%;
+    background: url(https://media.istockphoto.com/id/1173451503/vector/space-background-with-realistic-nebula-and-shining-stars-colorful-cosmos-with-stardust-and.jpg?s=612x612&w=0&k=20&c=mEoyUd-7lXPnVzcDgN_LFdHTiGAnkzjlgtXEte9KMVc=);
+    
+  }
+
+  a {
+
+    font-size: 300%;
+    text-decoration: none;
+    text-align: center;
+    display: block;
+    height: 100%;
+    width: 100%;
+    color: aliceblue;
+    
+  
+    text-shadow: #FC0 3px 0 10px;
+
+  }
