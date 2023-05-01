@@ -5,32 +5,28 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <link rel="stylesheet" href="lon.css">
 </head>
 <body>
-    <div>
-        <div>Välj timlön</div>
-        <div>139,43 kr<input type="radio" name="asd" id = "forst" value="139.43" ></div>
-        <div>147,19 kr<input type="radio" name="asd" id = "six" value="147.19"></div>
-        <div>170,97 kr<input type="radio"name="asd"  id = "last" value="170.97"></div>
-        <div>NÄRVARO <input type="number" id="nervaro"></div>
-        <div>FRÅNVARO <input type="number" id="franvaro"></div>
-        <div>OB A <input type="number" id="oba"></div>
-        <div>OB B <input type="number" id="obb"></div>
-        <div>OB B1 <input type="number" id="obb1"></div>
-        <div>OB C <input type="number" id="obc"></div>
-        <div>OB D <input type="number" id="obd"></div>
-        <div>ÖVERTID VECKA <input type="number" id="vecka"></div>
-        <div>ÖVERTID MÅNAD <input type="number" id="monad"></div>
-        <div><button type="button" onclick="berakna()">BERÄKNA</button></div>
-        <div id="forre"></div>
-        <div>Räkna ut lön efter skatt <a href="https://www.fortnox.se/fortnox-foretagsguide/lon-efter-skatt" style="text-decoration:none; color: green;" style="color: red">alternativ 1</a> -  <a href="https://app.skatteverket.se/rakna-skatt-client-skut-skatteutrakning/lon-efter-skattetabell/fyll-i-dina-uppgifter" style="text-decoration:none; color: green">alternativ 2</a></div>
-        
-
-
-
-
-
-
+    <div id="lonCon">
+        <form id="registerwrapper">
+        <div class="rub">Välj timlön</div>
+        <div class="el"><label>139,43</label><input type="radio" name="asd" id = "forst" value="139.43" ></div>
+        <div class="el"><label>147,19 kr</label><input type="radio" name="asd" id = "six" value="147.19"></div>
+        <div class="el"><label>170,97 kr</label><input type="radio"name="asd"  id = "last" value="170.97"></div>
+        <div class="el"><label >NÄRVARO</label> <input type="number" id="nervaro"></div>
+        <div class="el"><label>FRÅNVARO</label> <input type="number" id="franvaro"></div>
+        <div class="el"><label>OB A </label><input type="number" id="oba"></div>
+        <div class="el"><label>OB B </label><input type="number" id="obb"></div>
+        <div class="el"><label>OB B1</label> <input type="number" id="obb1"></div>
+        <div class="el"><label>OB C</label> <input type="number" id="obc"></div>
+        <div class="el"><label>OB D</label> <input type="number" id="obd"></div>
+        <div class="el"><label>ÖVERTID VECKA</label> <input type="number" id="vecka"></div>
+        <div class="el"><label>ÖVERTID MÅNAD</label> <input type="number" id="monad"></div>
+        <div class="el"><input type="button" onclick="berakna()" id="but" value="BERÄKNA"/></div>
+        <div class="el" id="forre"></div>
+        <div class="el, sis">Räkna ut lön efter skatt <a href="https://www.fortnox.se/fortnox-foretagsguide/lon-efter-skatt" style="text-decoration:none; color: green;" style="color: red"><b>Alternativ <sup>1</sup></b></a> -  <a href="https://app.skatteverket.se/rakna-skatt-client-skut-skatteutrakning/lon-efter-skattetabell/fyll-i-dina-uppgifter" style="text-decoration:none; color: green"><b>Alternativ <sup>2</sup></a></b></div>
+    </form>
 
 
     </div>
