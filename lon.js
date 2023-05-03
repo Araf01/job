@@ -39,7 +39,7 @@ function berakna() {
       
 
 
-      var arbettid =  ner - olovlig;
+      var arbettid =  ner;
     
       timlon80 = timlon * 0.80;
     
