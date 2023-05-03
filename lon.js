@@ -8,6 +8,7 @@ const eftersix = 147.19;
 const efterall = 170.97;
 var timlon = 0;
 var overtim = 0;
+var olovlig = 0;
 
 function berakna() {
 
@@ -38,11 +39,18 @@ function berakna() {
       
 
 
-      const arbettid =  ner - fron;
+      var arbettid =  ner - fron - olovlig;
+    
+      timlon80 = timlön * 0.80;
+    
+      var fron80 = fron * timlon80;
+      var tim80 = (fron * 0.20) * timlon80;
+    fronvoroo = fron80 - tim80:
+    
       var obbs = (oba_ * obA) + (obb_ * obB) + (obb1_ * obB1) + (obc_ * obC) + (obd_ * obD);
       var over = (vecka * overtim) + (monad * overtim);
 
-      var sum = (arbettid * timlon) + obbs + over;
+      var sum = (arbettid * timlon) + obbs + over + fronvoroo ;
 
       skatt.innerText = sum + " SEK";
      
