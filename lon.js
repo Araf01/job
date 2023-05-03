@@ -23,8 +23,8 @@ function berakna() {
         overtim = 85.485;
       }
 
-      const ner = Number(document.getElementById('nervaro').value); 
-      const fron = Number(document.getElementById('franvaro').value); 
+      var ner = Number(document.getElementById('nervaro').value); 
+      var fron = Number(document.getElementById('franvaro').value); 
 
       const oba_ = Number(document.getElementById('oba').value); 
       const obb_ = Number(document.getElementById('obb').value); 
