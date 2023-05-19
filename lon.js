@@ -6,6 +6,7 @@ const obD = 154.04;
 const prov = 139.43;
 const eftersix = 147.19;
 const efterall = 170.97;
+const grupp = 177.8;
 var timlon = 0;
 var overtim = 0;
 
@@ -21,7 +22,11 @@ function berakna() {
       else if(document.getElementById('last').checked) {
         timlon = efterall;
         overtim = 85.485;
+      } else if(document.getElementById('grup').checked) {
+        timlon = grupp;
+        overtim = 88.9;
       }
+
 
       var ner = Number(document.getElementById('nervaro').value); 
       var fron = Number(document.getElementById('franvaro').value); 
