@@ -1,12 +1,12 @@
-const obA = 23.27;
-const obB = 35.36;
-const obB1 = 39.70;
-const obC = 68.74;
-const obD = 154.04;
-const prov = 139.43;
-const eftersix = 153.19;
-const efterall = 170.97;
-const grupp = 177.8;
+const obA = 24.22;
+const obB = 36.81;
+const obB1 = 41.33;
+const obC = 71.56;
+const obD = 160.36;
+const prov = 145.11;
+const eftersix = 153.04;
+const efterall = 177.89;
+const grupp = 184.87;
 var timlon = 0;
 var overtim = 0;
 
@@ -14,17 +14,17 @@ function berakna() {
 
     if(document.getElementById('forst').checked) {    
         timlon = prov;
-        overtim = 69.715;
+        overtim = timlon÷2;
       }else if(document.getElementById('six').checked) {
         timlon = eftersix;
-        overtim = 73.595;
+        overtim = timlon÷2 ;
       }
       else if(document.getElementById('last').checked) {
         timlon = efterall;
-        overtim = 85.485;
+        overtim = timlon÷2 ;
       } else if(document.getElementById('grup').checked) {
         timlon = grupp;
-        overtim = 88.9;
+        overtim = timlon÷2 ;
       }
 
 
