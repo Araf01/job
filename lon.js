@@ -14,17 +14,17 @@ function berakna() {
 
     if(document.getElementById('forst').checked) {    
         timlon = prov;
-        overtim = timlon÷2;
+        overtim = timlon / 2;
       }else if(document.getElementById('six').checked) {
         timlon = eftersix;
-        overtim = timlon÷2 ;
+        overtim = timlon / 2;
       }
       else if(document.getElementById('last').checked) {
         timlon = efterall;
-        overtim = timlon÷2 ;
+        overtim = timlon / 2;
       } else if(document.getElementById('grup').checked) {
         timlon = grupp;
-        overtim = timlon÷2 ;
+        overtim = timlon / 2 ;
       }
 
 
